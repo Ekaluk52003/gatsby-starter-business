@@ -4,21 +4,29 @@ import {Link} from 'gatsby'
 const PostCard = ({posts}) => {
   return (
     <div className='container'>
+      <div class="columns">
       {posts
         .filter(post => post.node.frontmatter.templateKey === 'article-page')
         .map(({node: post}) => (
+          <div class="column is-one-third">
           <div
-            className='content'
-            style={{border: '1px solid #eaecee', padding: '2em 4em'}}
+            className='card'
+          
             key={post.id}
           >
-            <p>
+            
               <Link className='has-text-primary' to={post.fields.slug}>
-                {post.frontmatter.title}
+              <div className="card-image">
+                <figure className="image is-4by3">
+                <img src={post.frontmatter.cover} />
+                </figure>
+              </div>          
               </Link>
+              <div className="card-content">
+              <h3 className="is-size-3 has-text-weight-medium">{post.frontmatter.title}</h3>
+              
               <span> &bull; </span>
               <small>{post.frontmatter.date}</small>
-            </p>
             <p>
               {post.excerpt}
               <br />
@@ -27,8 +35,11 @@ const PostCard = ({posts}) => {
                                 Keep Reading →
               </Link>
             </p>
+            </div>
+          </div>
           </div>
         ))}
+        </div>
     </div>
   )
 }
