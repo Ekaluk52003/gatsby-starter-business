@@ -26,6 +26,7 @@ const HomePageTemplate = ({
               <div className='section'>
                 <h1 className='title'>
                   {title}
+                  {Sub_Title}
                 </h1>
               </div>
             </div>
@@ -60,6 +61,7 @@ const HomePageTemplate = ({
 
 HomePageTemplate.propTypes = {
   title: PropTypes.string,
+  Sub_Title: PropTypes.string,
   meta_title: PropTypes.string,
   meta_description: PropTypes.string,
   heading: PropTypes.string,

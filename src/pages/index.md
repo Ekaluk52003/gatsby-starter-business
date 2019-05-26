@@ -1,6 +1,7 @@
 ---
 templateKey: 'home-page'
 title: Gatsby Starter Business
+Sub_Title : Subtitle
 meta_title: Home | Gatsby Starter Business
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur

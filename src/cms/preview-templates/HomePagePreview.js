@@ -12,6 +12,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
   return (
     <HomePageTemplate
       title={entry.getIn(['data', 'title'])}
+      Sub_Title={entry.getIn(['data', 'Sub_Title'])}
       meta_title={entry.getIn(['data', 'meta_title'])}
       meta_description={entry.getIn(['data', 'meta_description'])}
       heading={entry.getIn(['data', 'heading'])}
