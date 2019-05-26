@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 
 const HomePageTemplate = ({
   title,
+  Sub_Title,
   heading,
   description,
   offerings,
