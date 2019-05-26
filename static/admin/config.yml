@@ -6,6 +6,12 @@ publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dloy64fes
+    api_key: 172666738372465
+
 collections:
   - name: "pages"
     label: "Pages"
